@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        
+        <div class="display">
+            <input type="text" id="result" value=" ">
+            
+        </div>
+        <!-- <div class="big"></div> -->
+        
+
+        <div class="comb">
+        <div class="row">
+            <button class="button" id="red" onclick="wipe()">C</button>
+            <button class="button" id="red" 
+            style="font-size: 45px; margin-top: -8px; font-weight: normal;" 
+             onclick="sign('/')">&#247</button>
+            <button class="button" style="font-size: 40px; margin-top: -4px;" id="red" onclick="sign('*')">&times;</button>
+            <button class="button" id="red"
+            style="font-size: 25px; margin-top: 1px;" onclick="deleteLast()">&#9003;</button>
+        </div>
+
+        <div class="row">
+            <button class="button" onclick="show(7)">7</button>
+            <button class="button" onclick="show(8)">8</button>
+            <button class="button" onclick="show(9)">9</button>
+            <button class="button" id="red" onclick="sign('-')">&minus;</button>
+        </div>
+
+        <div class="row">
+            <button class="button" onclick="show(4)">4</button>
+            <button class="button" onclick="show(5)">5</button>
+            <button class="button" onclick="show(6)">6</button>
+            <button class="button" id="red"
+             style="font-size: 30px;" onclick="sign('+')">&plus;</button>
+        </div>
+
+        <div class="row">
+            <button class="button" onclick="show(1)">1</button>
+            <button class="button" onclick="show(2)">2</button>
+            <button class="button" onclick="show(3)">3</button>
+            <button class="button" id="reds" onclick="calculate()" 
+            ><span>&equals;</span></button>
+        </div>
+
+        <div class="row">
+           
+            <button class="button" onclick="show('0'+'0')">00</button>
+            <button class="button" onclick="show(0)">0</button>
+            <button class="button" onclick="show('.')">.</button>
+          
+            <!-- <button class="button"></button> -->
+        </div>
+    </div>
+</div>
+    <script src="cal.js"></script>
+</body>
+</html>

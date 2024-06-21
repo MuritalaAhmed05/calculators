@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: sans-serif;
+   
+}
+:root{
+    --bg:#3d3c3c;
+    --equal:color-mix(in srgb,
+blue 75%,
+white 
+    );
+}
+input[type="text"]{
+    padding:140px 0px 50px 0px;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    text-align: right;
+    font-size: 50px;
+    box-sizing: border-box;
+}
+
+/* .big{
+    background-color: var(--equal);
+    border-radius: 50%;
+    width: 15%;
+    height: 30%;
+    animation: animate 1s linear paused ;
+    z-index: -100000;
+    position: absolute;
+    top: 80px;
+    left: 530px;
+} */
+
+@keyframes animate {
+    0%{
+        background-color: var(--equal);
+        scale: 1.1;
+        border-radius: 50%;
+    }
+    25%{
+        background-color: var(--equal);
+        scale: 1.6;
+        border-radius: 50%;
+    }
+    50%{
+        background-color: var(--equal);
+        scale: 2.1;
+        border-radius: 50%;
+    }
+    75%{
+        background-color: var(--equal);
+        scale: 2.4;
+        border-radius: 50%;
+    }
+    100%{
+        background-color: var(--equal);
+        scale: 3.3;
+        border-radius: 50%;
+    }
+}
+
+.container{
+    width: 350px;
+    background-color: black;
+    border-radius: 8px;
+    border: 1px solid var(--equal);
+    /* padding: 14px; */
+   margin: 35px auto;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+ 
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5, 15px);
+    /* row-gap: 0px; */
+    background-color: #252525;
+  padding: 10px 5px 0px 5px;
+  
+}
+.container .row:last-child{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.button{
+    border:none;
+    background-color: transparent;
+    color: white;
+    padding: 10px 0px 45px 0px;
+    text-align: center;
+/* border-radius: 50%; */
+}
+
+/* .diff{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    background-color: #252525;
+} */
+#reds{
+    grid-column: 4;
+    grid-row: auto/ span 2;
+    color: white;
+    background-color: var(--equal);
+    padding: 70px 0px;
+    text-align: center;
+    border-radius: 8px;
+    /* align-items: center;
+    justify-content: center; */
+    text-align:center;
+    width: 65px;
+    position: relative;
+}
+#reds span{
+    position: absolute;
+   top: 40%;
+   right: 25px;
+}
+#red{
+    color: var(--equal);
+}
+.button:active{
+    transform: scale(1.1);
+}
